@@ -1,14 +1,30 @@
 # 프로젝트명: 분류기 만들기
 
 ### 목표
-1. 3가지 데이터셋의 구성이 합리적으로 진행되었는가?
-2. 3가지 데이터셋에 대해 각각 5가지 모델을 성공했는가?
-3. 3가지 데이터셋에 대해 모델의 평가지표가 적절히 선택되었는가?
+- 데이터셋 잘 구성하기
+- 
+- 5가지 모델을 성공시키기
+- 
+- 모델의 평가지표가 적절히 선택하기
+_________________________________________________________________________________
+### 1. 어려웠던 점
+-대표적인 평가 지표인 오차행렬을 프로젝트에 적용하기 어려웠다. 같은 데이터셋의 레이블이라도 서로 다른 오차행렬 결과를 낸다는 것을 말한다.
 
+
+### 2. 프로젝트 후 애매하거나 알게된 점
+##### 1) 알게된 점
 *알게된 점
 https://www.inflearn.com/questions/75980
 https://stats.stackexchange.com/questions/184017/how-to-fix-non-convergence-in-logisticregressioncv
 =>4000으로 하니까 warning이 뜨지 않음 왜?
 
-Decision Tree의 정확도가 가장 낮았음
-random_state값을 변화시켜도 8~128까지 2의 제곱수로 변경해도 약 84%~85%사이로 나왔다.
+##### 2) 애매한 점
+**wine 분류 SGD Classifier F1-score class2 0**
+-처음 코드를 작성할 때 세 데이터셋을 서로 다른 페이지에서 작업하였다. 당시에 wine dataset의 SGD Classifier를 사용한 훈련 시 오류가 발생하지 않았다. 하지만 세 데이터셋을 한 페이지에 잓성하고 같은 부분을 다시 실행시켰더니 class 2의 모든 평가 지표(precision, recall, f1-score)가 0으로 나왔다. 해당 오류는 "Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior."문구였다. 구글링 결과 y_Test에 있는 라벨값과 예측값에 있는 깂이 달라 발생한 문제이며 classification_report 메소드에 zero_division=1을 추가하라고 하였다. 그 결과 경고창이 뜨지 않고 class 2의 precision이 1.0으로 바뀌었지만, zero_division 인자는 모델 오류를 해결하는 것이 아니기 때문에 근본적인 해결책은 아닌 것 같다.
+
+### 3. 난관을 극복하자
+##### 1)평가지표 고르기
+-
+
+
+### 4. 아직 더 해볼 것

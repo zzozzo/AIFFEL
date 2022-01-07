@@ -13,10 +13,10 @@ ________________________________________________________________________________
 
 ### 2. 프로젝트 후 애매하거나 알게된 점
 ##### 1) 알게된 점
-*알게된 점
-https://www.inflearn.com/questions/75980
-https://stats.stackexchange.com/questions/184017/how-to-fix-non-convergence-in-logisticregressioncv
-=>4000으로 하니까 warning이 뜨지 않음 왜?
+**logistic regression warining(max_iter)
+`/opt/conda/lib/python3.9/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):`
+ 
+손글씨 데이터셋을 logistic regression으로 훈련을 시킬때 위와 같은 warning이 떴다. 수렴이 안됐다는 것인데 만족할만한 결과에 훈련 결과가 수렴하지 못한 것을 의미한다. 그래서 max_iter 인자를 추가하면 warning이 뜨지 않았다.
 
 ##### 2) 애매한 점
 **wine 분류 SGD Classifier F1-score class2 0**

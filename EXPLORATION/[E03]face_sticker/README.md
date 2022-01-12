@@ -32,5 +32,40 @@ ________________________________________________________________________________
   -다양한 케이스를 같은 코드로 수행하며 함수화의 필요성을 절절히 느꼈다. 시간이 된다면 함수형으로 랜드마크~스티커 출력까지 모두 함수로 제작해 간결하게 코드를 작성해야겠다.
   
 ### 프로젝트 결론
-1. 인식이 된 케이스
-2. 인식이 안 된 
+__1. 인식이 된 케이스__   
+  1)haar feature 사용해 얼굴 부위만 캡쳐한 사진   
+  ![image](https://user-images.githubusercontent.com/33904461/149165328-07a203b5-0963-43ac-aea3-96f09f5ac16a.png)   
+     
+   2)손으로 턱 살짝 가린 사진   
+    ![image](https://user-images.githubusercontent.com/33904461/149165065-cec46512-9f5c-4561-9841-3a79962b7c74.png)   
+     
+   3)전신+약간 원거리 사진   
+   ![image](https://user-images.githubusercontent.com/33904461/149165214-3bdd4425-e8b0-4388-81c6-8f16c9fc3f43.png)   
+   
+__2. 인식이 안 된 케이스__   
+  1)90도 회전한 사진   
+  ![image](https://user-images.githubusercontent.com/33904461/149165609-453e8bde-9f97-4f3f-aeff-47ae78f2c33f.png)   
+     
+  2)얼굴 일부분에만 빛이 강할 때   
+  ![image](https://user-images.githubusercontent.com/33904461/149165712-0281564d-0b77-43b0-86b9-e6e62108e857.png)   
+  HOG feature 추출   
+  ![image](https://user-images.githubusercontent.com/33904461/149165796-552f2ccd-bd9c-4e13-a8a7-4a59e9dd7d15.png)   
+  확실히 얼굴 쪽에 있는 그레디언트들이 얼굴 형태를 그리지 못한다. HOG 논문에서 그레디언트는 밝기에 민감한, 즉, 밝기에 따라 그레디언트 값이 달라져 코드 실행 결과에도 영향을 미칠 수 있고, 이를 완벽히 제거하지 못한다고 하였다. 그래서 얼굴 한 쪽에만 빛이 강할 경우 얼굴 감지가 안되는 것과 연결되지 않을까 추측하였다.   
+        
+  3)측면 사진   
+        ![image](https://user-images.githubusercontent.com/33904461/149166161-6f1b7109-c6d5-490d-b238-8575fc90edba.png)   
+  HOG fetaure 추출   
+        ![image](https://user-images.githubusercontent.com/33904461/149166239-e84ad8e8-4878-4f96-a21a-275895b7cc5b.png)   
+        Descriptor가 얼굴을 감지하지 못해서 HOG feature 출력해봤더니 확실히 얼굴 형태가 잘 보이지 않는 것 같다.얼굴 주위로 모자, 팔, 차선 등이 있어 얼굴 인식에 방해가 되는 것 같기도 하다.   
+           
+   4)마스크 착용 사진   
+           ![image](https://user-images.githubusercontent.com/33904461/149166355-aded0a32-213f-4852-bf6c-083c9a8ad3d3.png)   
+   HOG fetaure 추출   
+           ![image](https://user-images.githubusercontent.com/33904461/149166729-5d4ea50b-f78e-4952-b6d8-0aff611baad2.png)   
+           요즘 카메라 어플에서 스티커를 사용할 때 마스크를 착용해도 얼굴이 인식 되어서 HOG로도 얼굴이 감지되는지 궁금했다. 하지만 마스크를 착용한 부분에서 코와 입 모양이 그려지지 않는 것을 볼 수 있다. 그래서 마스크 착용 후 사용할 수 있는 애플리케이션은 인공지능을 활용해 마스크 착용 여부를 학습시키는 것 같다.
+
+
+
+
+
+

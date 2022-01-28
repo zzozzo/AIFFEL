@@ -40,7 +40,7 @@ img_mask4 = cv2.rotate(img_mask4, cv2.ROTATE_90_CLOCKWISE).copy()
 <img src='https://user-images.githubusercontent.com/33904461/151569070-e05d15ae-c32a-4789-878c-9884b8fe37e7.png' style="float: left; width:30%; height:30%"/>    
 
 #### __2)__   
-<img src='https://user-images.githubusercontent.com/33904461/151569070-e05d15ae-c32a-4789-878c-9884b8fe37e7.png' style="float: left; width:30%; height:30%"/>    
+<img src='https://user-images.githubusercontent.com/33904461/151572361-fd9512bd-726c-4af0-b594-bef5418b2cb6.png' style="float: left; width:30%; height:30%"/>    
 
 #### __3)__   
 <img src='https://user-images.githubusercontent.com/33904461/151569328-41728ef0-627d-4b1c-8301-1488d583a0b0.png' style="float: left; width:30%; height:30%"/>    
@@ -48,7 +48,8 @@ img_mask4 = cv2.rotate(img_mask4, cv2.ROTATE_90_CLOCKWISE).copy()
 #### __4)__   
 <img src='https://user-images.githubusercontent.com/33904461/151569532-7f608287-0768-4b4c-bcc8-90ebb5607e87.png' style="float: left; width:30%; height:30%"/> 
 
-#### __5)__   
+#### __5)__      
+- 식빵굽는 고양이도 고양이로 볼 지 궁금해서 시도한 사진인데 고양이로 인식한다는 결과를 얻었다.   
 <img src='https://user-images.githubusercontent.com/33904461/151569721-9f1eea84-0b1b-4ede-a3fc-bbdbf4cd1247.png' style="float: left; width:30%; height:30%"/>    
 
 #### __6)__   
@@ -56,11 +57,23 @@ img_mask4 = cv2.rotate(img_mask4, cv2.ROTATE_90_CLOCKWISE).copy()
 
 #### __7) 함수화를 통한 간편한 실행__   
    __(1)LABEL_NAMES와 사진안에 모두 있는 객체를 세그먼트하려고 할 때__   
-      -정상적으로 출력되는 것을 볼 수 있음
+      -정상적으로 출력되는 것을 볼 수 있음   
       <img src='https://user-images.githubusercontent.com/33904461/151570366-4dc4abac-4261-4746-b1df-3aedb5bcfe9c.png' style="float: left; width:30%; height:30%"/>        
    __(2)LABEL_NAMES에 없는 객체를 세그먼트하려고 할 때__   
       -'구분할 수 없는 객체입니다'문구가 출력되도록 함   
       <img src='https://user-images.githubusercontent.com/33904461/151570864-b1bbe87f-d6eb-4db1-b385-ded4ababc704.png' style="float: left; width:30%; height:30%"/>    
    __(3)LABEL_NAMES에 있지만 사진에 없는 객체를 세그먼트하려고 할 때__   
       -'사진에 없는 개체입니다'문구가 출력되도록 함   
-      <img src='https://user-images.githubusercontent.com/33904461/151570976-8ea11d45-d181-4575-b405-b0a850164669.png' style="float: left; width:30%; height:30%"/>  
+      <img src='https://user-images.githubusercontent.com/33904461/151570976-8ea11d45-d181-4575-b405-b0a850164669.png' style="float: left; width:30%; height:30%"/>   
+
+### 2. 잘 되지 않은 부분 확인하기   
+#### __1)__     
+<img src='https://user-images.githubusercontent.com/33904461/151008380-0d9bb2fd-9d95-479a-a89c-315036431e04.png' style="float: left; width:30%; height:30%"/>        
+#### __2)__     
+<img src='https://user-images.githubusercontent.com/33904461/151008595-0d6655c1-485c-49d1-ae1e-d00855965b60.png' style="float: left; width:30%; height:30%"/>  
+#### __3)__     
+<img src='https://user-images.githubusercontent.com/33904461/150921748-c2bcd276-14b4-41d5-8934-0ec220a7991d.png' style="float: left; width:30%; height:30%"/>   
+#### __4)__     
+<img src='https://user-images.githubusercontent.com/33904461/151009162-9ca57b8a-3529-4e7d-882c-a8d10cc942a2.png' style="float: left; width:30%; height:30%"/>   
+#### __5)__     
+<img src='https://user-images.githubusercontent.com/33904461/150926720-ba3f03da-fcf5-4d90-98af-7805e3fba5ff.png' style="float: left; width:30%; height:30%"/>

@@ -37,30 +37,30 @@ img_mask4 = cv2.rotate(img_mask4, cv2.ROTATE_90_CLOCKWISE).copy()
 ## 프로젝트 결론   
 ### 1. 다양한 사진으로 인물모드 구현하기   
 #### __1)__   
-<img src='https://user-images.githubusercontent.com/33904461/151569070-e05d15ae-c32a-4789-878c-9884b8fe37e7.png' style="float: left"/>    
+<img src='https://user-images.githubusercontent.com/33904461/151569070-e05d15ae-c32a-4789-878c-9884b8fe37e7.png' style="float: left; width:30%; height:30%"/>    
 
 #### __2)__   
-<img src='<img src='https://user-images.githubusercontent.com/33904461/151569070-e05d15ae-c32a-4789-878c-9884b8fe37e7.png' style="float: left"/>' style="float: left"/>   
+<img src='https://user-images.githubusercontent.com/33904461/151569070-e05d15ae-c32a-4789-878c-9884b8fe37e7.png' style="float: left; width:30%; height:30%"/>    
 
 #### __3)__   
-<img src='<img src='https://user-images.githubusercontent.com/33904461/151569328-41728ef0-627d-4b1c-8301-1488d583a0b0.png' style="float: left"/>' style="float: left"/>   
+<img src='https://user-images.githubusercontent.com/33904461/151569328-41728ef0-627d-4b1c-8301-1488d583a0b0.png' style="float: left; width:30%; height:30%"/>    
 
 #### __4)__   
-<img src='<img src='https://user-images.githubusercontent.com/33904461/151569532-7f608287-0768-4b4c-bcc8-90ebb5607e87.png' style="float: left"/>' style="float: left"/> 
+<img src='https://user-images.githubusercontent.com/33904461/151569532-7f608287-0768-4b4c-bcc8-90ebb5607e87.png' style="float: left; width:30%; height:30%"/> 
 
 #### __5)__   
-<img src='<img src='https://user-images.githubusercontent.com/33904461/151569721-9f1eea84-0b1b-4ede-a3fc-bbdbf4cd1247.png' style="float: left"/>' style="float: left"/>    
+<img src='https://user-images.githubusercontent.com/33904461/151569721-9f1eea84-0b1b-4ede-a3fc-bbdbf4cd1247.png' style="float: left; width:30%; height:30%"/>    
 
 #### __6)__   
-<img src='<img src='https://user-images.githubusercontent.com/33904461/151570107-b25daf45-7e05-4f7f-8172-15dbaa52d0b8.png' style="float: left"/>' style="float: left"/>   
+<img src='https://user-images.githubusercontent.com/33904461/151570107-b25daf45-7e05-4f7f-8172-15dbaa52d0b8.png' style="float: left; width:30%; height:30%"/>   
 
 #### __7) 함수화를 통한 간편한 실행__   
    __(1)LABEL_NAMES와 사진안에 모두 있는 객체를 세그먼트하려고 할 때__   
       -정상적으로 출력되는 것을 볼 수 있음
-      <img src='<img src='https://user-images.githubusercontent.com/33904461/151570366-4dc4abac-4261-4746-b1df-3aedb5bcfe9c.png' style="float: left"/>' style="float: left"/>     
+      <img src='https://user-images.githubusercontent.com/33904461/151570366-4dc4abac-4261-4746-b1df-3aedb5bcfe9c.png' style="float: left; width:30%; height:30%"/>        
    __(2)LABEL_NAMES에 없는 객체를 세그먼트하려고 할 때__   
       -'구분할 수 없는 객체입니다'문구가 출력되도록 함   
-      <img src='<img src='https://user-images.githubusercontent.com/33904461/151570864-b1bbe87f-d6eb-4db1-b385-ded4ababc704.png' style="float: left"/>' style="float: left"/>   
+      <img src='https://user-images.githubusercontent.com/33904461/151570864-b1bbe87f-d6eb-4db1-b385-ded4ababc704.png' style="float: left; width:30%; height:30%"/>    
    __(3)LABEL_NAMES에 있지만 사진에 없는 객체를 세그먼트하려고 할 때__   
       -'사진에 없는 개체입니다'문구가 출력되도록 함   
-      <img src='<img src='https://user-images.githubusercontent.com/33904461/151570976-8ea11d45-d181-4575-b405-b0a850164669.png' style="float: left"/>' style="float: left"/> 
+      <img src='https://user-images.githubusercontent.com/33904461/151570976-8ea11d45-d181-4575-b405-b0a850164669.png' style="float: left; width:30%; height:30%"/>  

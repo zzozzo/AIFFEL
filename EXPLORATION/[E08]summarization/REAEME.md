@@ -72,16 +72,36 @@ __(2)drop out과 recurrent drop out을 함께 적용한 경우__
 <img src='https://user-images.githubusercontent.com/33904461/151661559-b32434a2-e6b0-43b0-997a-b35d62e33002.png' style="float: left; width:30%; height:30%"/>   
 
 #### 3) abstractive VS extractive   
+0~99 사이에서 10개 문장을 뽑아 내용을 확인하였다.      
 __(1)abstracitve - only drop out__   
- <img src='https://user-images.githubusercontent.com/33904461/151659060-f69e973d-e935-4bdf-a273-9c9f2d31d1b2.png' style="float: left; width:60%; height:60%"/>   
- <img src='https://user-images.githubusercontent.com/33904461/151659474-75699aca-7a0f-4ad4-891c-50a3952c8476.png' style="float: left; width:60%; height:60%"/>   
- <img src='https://user-images.githubusercontent.com/33904461/151659484-6b0cfd1f-206b-4b7a-a16a-a47c9622f8f6.png' style="float: left; width:60%; height:60%"/>   
+전반적으로 품질이 좋지 못했다.     
+
+ <img src='https://user-images.githubusercontent.com/33904461/151662267-285128ea-1038-45de-ad38-73565f632dae.png' style="float: left; width:60%; height:60%"/>    
+ 그나마 비슷하게 나온 내용 같은데 이것도 완벽하게 요약하지 못했다.    
+ 
+ <img src='https://user-images.githubusercontent.com/33904461/151659474-75699aca-7a0f-4ad4-891c-50a3952c8476.png' style="float: left; width:60%; height:60%"/>   인도가 무언가를 크게 한다는 의미로는 맞게 요약한 것 같지만 imf에 대한 부채가 많다는 핵심 내용은 포함하지 못했다.   
+ 
+ <img src='https://user-images.githubusercontent.com/33904461/151659484-6b0cfd1f-206b-4b7a-a16a-a47c9622f8f6.png' style="float: left; width:60%; height:60%"/>   요약이 근본적으로 잘못 된 예다.      
+ 
 __(2)extracitve__   
  <img src='https://user-images.githubusercontent.com/33904461/151661728-f543663d-f1f3-48e8-8c0e-3e6ca362888e.png' style="float: left; width:60%; height:60%"/>   
  알맞은 문장을 추출한 내용이 보인다.   
+ 
   <img src='https://user-images.githubusercontent.com/33904461/151661684-488a7487-f6bf-4b17-b5c9-4740b9abc61f.png' style="float: left; width:60%; height:60%"/>   
   아예 요약이 되지 않은 문장도 있었다.   
+  
    <img src='https://user-images.githubusercontent.com/33904461/151661673-614a918c-f797-4de4-b12b-7593adf13b0f.png' style="float: left; width:60%; height:60%"/>   
    전처리가 깔끔하게 되지 않은 문장도 확인되었다.   
+   
 __(3)abstracitve - drop out and recurrent drop out__   
- <img src='https://user-images.githubusercontent.com/33904461/151659060-f69e973d-e935-4bdf-a273-9c9f2d31d1b2.png' style="float: left; width:60%; height:60%"/>   
+그냥 drop out만 적용했을 때 보다 문법적으로 맞는 것 같은 문장이 많아졌지만 여전히 품질이 썩 좋지 못하다.   
+ <img src='https://user-images.githubusercontent.com/33904461/151662282-0d83f36a-50d3-4545-966f-ab1bd5d74241.png' style="float: left; width:60%; height:60%"/>  그냥 drop out만 적용했을 때랑 똑같이 나왔다.   
+ 
+ <img src='https://user-images.githubusercontent.com/33904461/151662194-fd22c7b7-2e20-4a71-b63d-358df3e22005.png' style="float: left; width:60%; height:60%"/>   인도가 무언가가 크다는 것은 맞게 요약에 포함시켰지만, 여전히 부채 이야기가 아니다.   
+ 
+ <img src='https://user-images.githubusercontent.com/33904461/151662216-68afa879-9b48-4946-a512-0dbdc5ee88f0.png' style="float: left; width:60%; height:60%"/>   문법에 맞게 요약한 것 같지만 실제 요약 내용에 맞지 않는다.   
+ 
+> 총평
+
+- 원문이 짧아 요약이 잘 이뤄지지 않는 것 같다.   
+- attention mechanism을 이용하기 위해선 논문을 읽고 원리 이해가 필요할 것 같다.   

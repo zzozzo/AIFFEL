@@ -73,15 +73,15 @@ __(2)drop out과 recurrent drop out을 함께 적용한 경우__
 
 #### 3) abstractive VS extractive   
 __(1)abstracitve - only drop out__   
- <img src='https://user-images.githubusercontent.com/33904461/151659060-f69e973d-e935-4bdf-a273-9c9f2d31d1b2.png' style="float: left; width:30%; height:30%"/>   
- <img src='https://user-images.githubusercontent.com/33904461/151659474-75699aca-7a0f-4ad4-891c-50a3952c8476.png' style="float: left; width:30%; height:30%"/>   
- <img src='https://user-images.githubusercontent.com/33904461/151659484-6b0cfd1f-206b-4b7a-a16a-a47c9622f8f6.png' style="float: left; width:30%; height:30%"/>   
+ <img src='https://user-images.githubusercontent.com/33904461/151659060-f69e973d-e935-4bdf-a273-9c9f2d31d1b2.png' style="float: left; width:60%; height:60%"/>   
+ <img src='https://user-images.githubusercontent.com/33904461/151659474-75699aca-7a0f-4ad4-891c-50a3952c8476.png' style="float: left; width:60%; height:60%"/>   
+ <img src='https://user-images.githubusercontent.com/33904461/151659484-6b0cfd1f-206b-4b7a-a16a-a47c9622f8f6.png' style="float: left; width:60%; height:60%"/>   
 __(2)extracitve__   
- <img src='https://user-images.githubusercontent.com/33904461/151661728-f543663d-f1f3-48e8-8c0e-3e6ca362888e.png' style="float: left; width:30%; height:30%"/>   
+ <img src='https://user-images.githubusercontent.com/33904461/151661728-f543663d-f1f3-48e8-8c0e-3e6ca362888e.png' style="float: left; width:60%; height:60%"/>   
  알맞은 문장을 추출한 내용이 보인다.   
-  <img src='https://user-images.githubusercontent.com/33904461/151661684-488a7487-f6bf-4b17-b5c9-4740b9abc61f.png' style="float: left; width:30%; height:30%"/>   
+  <img src='https://user-images.githubusercontent.com/33904461/151661684-488a7487-f6bf-4b17-b5c9-4740b9abc61f.png' style="float: left; width:60%; height:60%"/>   
   아예 요약이 되지 않은 문장도 있었다.   
-   <img src='https://user-images.githubusercontent.com/33904461/151661673-614a918c-f797-4de4-b12b-7593adf13b0f.png' style="float: left; width:30%; height:30%"/>   
+   <img src='https://user-images.githubusercontent.com/33904461/151661673-614a918c-f797-4de4-b12b-7593adf13b0f.png' style="float: left; width:60%; height:60%"/>   
    전처리가 깔끔하게 되지 않은 문장도 확인되었다.   
 __(3)abstracitve - drop out and recurrent drop out__   
- <img src='https://user-images.githubusercontent.com/33904461/151659060-f69e973d-e935-4bdf-a273-9c9f2d31d1b2.png' style="float: left; width:30%; height:30%"/>   
+ <img src='https://user-images.githubusercontent.com/33904461/151659060-f69e973d-e935-4bdf-a273-9c9f2d31d1b2.png' style="float: left; width:60%; height:60%"/>   

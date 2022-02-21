@@ -17,8 +17,7 @@ ________________________________________________________________________________
 ### 2. 프로젝트로 알게된 점
 ##### 1) custum learning rate코드로 고오오오오급 훈련을 시켜보자  
 - warmup_steps단위로 learning rate step을 조정하게 된다
-```
-python
+```python
     def __call__(self, step):
         arg1 = tf.math.rsqrt(step)
         arg2 = step * (self.warmup_steps**-1.5)

@@ -29,7 +29,7 @@ name.head()
    
 표처럼 정리된다.    
 
-<img src="https://user-images.githubusercontent.com/33904461/155101512-e4ca4a19-c160-4276-b8c6-a63985603eda.png"  height=30% , width=30% >   
+<img src="https://user-images.githubusercontent.com/33904461/155101512-e4ca4a19-c160-4276-b8c6-a63985603eda.png"  style="float: left; width:50%; height:50%"/>   
 
 
 ### 2. 아직 더 해볼 것
@@ -43,10 +43,11 @@ name.head()
 - 선호하는 영화를 입력했을 때 비슷한 장르의 영화를 추천해주는 것을 확인하였다.  
 - 주목할 점은 같은 애니메이션 장르임에도 불구하고 두 영화의 성격이 달라 추천영화가 달라지는 것을 볼 수 있었다.   
 - toy story 입력했을 때   
-    <img src="https://user-images.githubusercontent.com/33904461/155257717-40b8eb6c-156f-4948-8374-d7fff4396b7e.png"  height=30% , width=30% >    
+    <img src="https://user-images.githubusercontent.com/33904461/155257717-40b8eb6c-156f-4948-8374-d7fff4396b7e.png"   style="float: left; width:30%; height:30%"/>      
     - toy story와 비슷한 내용 (우정 or 애니메이션)의 영화가 리스트업 되었다.   
--mulan 입력했을 때
-    <img src="https://user-images.githubusercontent.com/33904461/155258618-3c43bee5-69c5-4106-b220-2b4ae6c16692.png"  height=30% , width=30% >    
+    
+- mulan 입력했을 때   
+    <img src="https://user-images.githubusercontent.com/33904461/155258618-3c43bee5-69c5-4106-b220-2b4ae6c16692.png"   style="float: left; width:30%; height:30%"/>   
     - 애니메이션 장르 영화가 나왔지만, 영웅물이 함께 추천되는 것을 볼 수 있다   
 
 ##### 2) 비슷한 영화 고르기      

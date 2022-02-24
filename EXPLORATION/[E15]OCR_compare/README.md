@@ -21,7 +21,7 @@ ________________________________________________________________________________
 
 ### 3. 테스트 결과
 ##### 1) keras-ocr   
-![image](https://user-images.githubusercontent.com/33904461/155481536-d679f1c6-9741-469c-8580-19cbcaca851a.png)   
+![image](https://user-images.githubusercontent.com/33904461/155484359-29e77c3e-1def-497f-bed7-a02982fce8a3.png)   
 
 ##### 2) tesseract   
 - 자세한 결과는 주피터 노트북을 참고해주세요   
